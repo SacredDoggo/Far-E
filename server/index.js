@@ -17,7 +17,7 @@ app.use('/api/v1/post', postRoutes);
 app.use('/api/v1/dalle', dalleRoutes);
 
 app.get('/', async (req, res) => {
-    res.send('Hello from DALL-E!')
+    res.send("Hello from DALL-E!<br><br><li><b>GET:</b> /api/v1/post : fetch all the image data</li><li><b>POST:</b> /api/v1/dalle : generate image with given prompt { prompt }</li><li><b>POST:</b> /api/v1/post : Share the generated image with community {name, prompt, photo(base64)}</li>");
 })
 
 const startServer = async () => {
